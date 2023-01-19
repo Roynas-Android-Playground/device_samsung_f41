@@ -14,10 +14,14 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/samsung/f41
+
 # Inherit common device configuration
 $(call inherit-product, device/samsung/universal9611-common/common.mk)
 # Inherit F41 blobs
 $(call inherit-product, vendor/samsung/f41/f41-vendor.mk)
+
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 # Screen H/W
 TARGET_SCREEN_HEIGHT := 2400
