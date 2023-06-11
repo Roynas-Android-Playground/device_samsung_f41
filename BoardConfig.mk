@@ -24,8 +24,6 @@ include device/samsung/universal9611-common/BoardConfigCommon.mk
 # OTA Asserts
 TARGET_OTA_ASSERT_DEVICE := f41,f41dd,f41nsxx
 
-# Kernel config
-TARGET_KERNEL_CONFIG := vendor/f41-aosp_defconfig
 
 ## Partitions Sizes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 61865984
